@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Logging in to Docker Hub...
       - docker version
-      - docker login --username=$DOCKER_USER --password=$DOCKER_PASS --email=$DOCKER_EMAIL
+      - docker login --username=$DOCKER_USER --password=$DOCKER_PASS
   build:
     commands:
       - echo Build started on `date`
