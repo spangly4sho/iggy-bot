@@ -5,6 +5,6 @@ hooks:
     - location: scripts/stop-container.sh
       timeout: 300
       runas: ec2-user
-    - location: scripts/start-new-containter.sh
+    - location: scripts/start-new-container.sh
       timeout: 300
       runas: ec2-user

@@ -1,5 +1,9 @@
 echo cleaning docker environment
 
+docker-containers () {
+  echo ''
+}
+
 docker stop $(docker ps -aq)
 
 sleep 5
