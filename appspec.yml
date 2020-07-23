@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+hooks:
+  AfterInstall:
+    - location: script/remove-old-container.sh
+      timeout: 300
+      runas: ec2-user
+    - location: script/start-new-containter.sh
+      timeout: 300
+      runas: ec2-user
