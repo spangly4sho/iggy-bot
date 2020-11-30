@@ -17,6 +17,8 @@ public class IggyProperties {
 
     private List<String> yeetisms;
 
+    private List<String> hiddenChannels;
+
     public String getPrefix() {
         return prefix;
     }
@@ -50,6 +52,15 @@ public class IggyProperties {
 
     public IggyProperties setYeetisms(List<String> yeetisms) {
         this.yeetisms = yeetisms;
+        return this;
+    }
+
+    public List<String> getHiddenChannels() {
+        return hiddenChannels;
+    }
+
+    public IggyProperties setHiddenChannels(List<String> hiddenChannels) {
+        this.hiddenChannels = hiddenChannels;
         return this;
     }
 }
