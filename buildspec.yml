@@ -6,9 +6,11 @@ phases:
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
       - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
       - apt-get update
-      - apt-get install  openjdk-8-jre
-      - apt-get install  maven
+      - apt-get update -y
+      - apt-get install  openjdk-8-jdk -y
+      - apt-get install  maven -y
       - apt-get update
+      - apt-get upgrade -y
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
