@@ -1,2 +1,2 @@
 # iggy-bot
-Discord WebsocketAPI client 
+Discord WebsocketAPI client that also barks!
